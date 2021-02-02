@@ -3,16 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	  var fa = new FileAccessManager();
 
-	  var result = fa.read();
+        var fa = new FileAccessCommonsCsv();
 
-//        for (var line :
-//                result) {
-//            System.out.println(line);
-//        }
+        var result = fa.read();
 
-        result.add(new Product("Banana",1.2, 56));
+        for (var product :
+                result) {
+            System.out.println(product);
+        }
+
+        result.add(new Product("Chicken", 3, 2));
 
         fa.write(result);
     }

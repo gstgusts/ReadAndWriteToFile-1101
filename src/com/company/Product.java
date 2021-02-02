@@ -21,7 +21,7 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-    public double getAmount() {
+    public int getAmount() {
         return amount;
     }
     public void setAmount(int amount) {
